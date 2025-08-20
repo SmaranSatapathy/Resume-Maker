@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smaran Satapathy- Resume Marker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Resume Maker</h1>
+
+    <div class="grid">
+        <div class="form_section">
+            <div class="form">
+                <input type="text" name="" id="fname" placeholder="Enter first name">
+                <input type="text" name="" id="lname" placeholder="Enter last name">
+                <input type="email" name="" id="mail" placeholder="Enter email">
+                <input type="number" name="" id="phone" placeholder="Enter phone number">
+                <textarea name="" id="summary" placeholder="Enter your profile summary..."></textarea>
+
+                <div id="edu_section">
+                    <input type="text" name="" id="edu1" placeholder="Enter your college name" class="edu">
+                    <input type="number" name="" id="mark1" placeholder="Enter marks" class="edu">
+                    <input type="text" name="" id="edu2" placeholder="Enter college name" class="edu">
+                    <input type="number" name="" id="mark2" placeholder="Enter marks" class="edu">
+                </div>
+                <button id="add_edu">Add Education</button>
+
+                <h3>Select skills:</h3>
+                <div class="skills">
+                    <label><input type="checkbox" name="skills" value="HTML">HTML</label>
+                    <label><input type="checkbox" name="skills" value="CSS">CSS</label>
+                    <label><input type="checkbox" name="skills" value="Javascript">Javascript</label>
+                    <label><input type="checkbox" name="skills" value="React.JS">React.JS</label>
+                    <label><input type="checkbox" name="skills" value="PostgreSQL">PostgreSQL</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="Java">Java</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="C++">C++</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="C">C</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="Python">Python</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="Node.js">Node.js</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="Express.js">Express.js</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="AWS">AWS</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="Microsoft Azure">Microsoft Azure</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="GCP">GCP</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="Machine Learning">Machine Learning</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="Power BI">Power BI</label>
+                    <label><input type="checkbox" name="skills" class="check_box" value="Github">Github</label>
+                </div>
+                <h3>Experience</h3>
+                <div id="experience">
+                    <label>
+                        <input type="checkbox" name="exp" id="exp" value="yes">Yes
+                    </label>
+                </div>
+
+                <h3>Projects</h3>
+                <div id="form_project">
+
+                </div>
+                <button id="project_btn">Add Projects</button>
+                <!-- <button id="submit">Submit</button> -->
+            </div>
+        </div>
+        <div class="resume_section">
+            <div class="resume" id="resume">
+                <h1 id="fullname">Name</h1>
+                <div class="contact" id="contact">
+                    <p id="email"></p>
+                    <p id="phn"></p>
+                </div>
+                <hr>
+                <!-- <br> -->
+                <h2>Profile Summary</h2>
+                <p id="profile_summary"></p>
+                <!-- <br> -->
+
+                <h2>Education Details</h2>
+                <div class="education" id="education">
+
+                </div>
+
+                <!-- <br> -->
+                <h2>Skills/Interests</h2>
+                <div class="interests" id="interests">
+
+                </div>
+                <!-- <br> -->
+
+                <h2>Projects</h2>
+                <div id="resume_projects">
+                    
+                </div>
+
+                <!-- <br> -->
+                <div class="experience" id="resume_exp">
+                    <h2>Experience</h2>
+                    
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="reset">Reset</button>
+                <button id="download">Download</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/ResumeMaker/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</html>

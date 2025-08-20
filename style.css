@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1.heading{
+    text-align: center;
+    position: relative;
+    left: 0%;
+} 
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(2,auto);
+    border: 1px solid red;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid .form_section{
+    display: flex;
+    flex-direction: row;
+    border: 2px dashed blue;
+    padding: 5px;
+}
+
+.grid .form_section .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+}
+
+.grid .form_section input,textarea{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.grid .form_section .form #edu_section,.extra_edu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.grid .form_section .form #edu_section button{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.grid .form_section .form label{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid .form_section .form .skills{
+    display: flex;
+    justify-content:start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.grid .form_section .form .skills label{
+    gap: 7px;
+    padding: 5px;
+}
+
+.grid .form_section .form .skills label  input[type="checkbox"]{
+    width: auto;
+    height: auto;
+}
+
+.grid .form_section .form #experience{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid .form_section .form #experience label{
+    gap: 7px;
+    padding: 5px;
+}
+
+.grid .form_section .form #experience label  input[type="checkbox"]{
+    width: auto;
+    height: auto;
+}
+
+.div_duration{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid .form_section .form #form_project .project_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: center;
+}
+
+.grid .form_section .form #form_project .project_list input[type="date"]{
+    margin-left: 10px;
+}
+
+.gird .form_section .form #project_btn{
+    width: 100%;
+}
+
+/* RESUME PREVIEW */
+.resume_section{
+    padding: 10px;
+}
+
+.resume_section .resume{
+    width: 500px;
+    height:fit-content;
+    border: 1px solid black;
+    padding:7px;
+}
+
+.resume_section .resume h1,p{
+    text-align: center;
+}
+
+.resume_section .resume h2{
+    display: inline;
+    border-bottom: 1px solid black;
+}
+
+.resume_section .resume .contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    transition: color 2s;
+}
+
+.resume_section .resume .contact:hover{
+    color: red;
+    transform: scale(1.05);
+}
+
+.resume_section .resume #profile_summary,#education,#interests{
+    padding: 5px;
+    text-align: left;
+    transition: color 1s;
+}
+
+.resume_section .resume #profile_summary:hover{
+    color: blue;
+    transform: scale(1.03);
+}
+
+.grid .resume_section .resume label{
+    gap: 7px;
+    padding: 5px;
+}
+
+.grid .resume_section .resume #education{
+    transition: color 2s;
+}
+
+.resume_section .resume #education:hover{
+    color: red;
+    transform: scale(1.03);
+}
+
+.grid .resume_section .resume #interests{
+    transition: color 2s;
+}
+
+.resume_section .resume #interests:hover{
+    color: blue;
+    transform: scale(1.03);
+}
+
+.grid .resume_section .resume #resume_projects{
+    padding: 5px;
+    justify-content:start;
+    transition: color 2s;
+}
+
+.resume_section .resume #resume_projects:hover{
+    color: red;
+    transform: scale(1.03);
+}
+
+.grid .resume_section .resume #resume_exp{
+    transition: color 2s;
+}
+
+.resume_section .resume #resume_exp:hover{
+    color: blue;
+    transform: scale(1.03);
+}
+
+.grid .resume_section .buttons{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.grid .resume_section .buttons button#reset{
+    padding: 5px;
+    border-radius: 7px;
+    background-color:red;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.grid .resume_section .buttons button#download{
+    padding: 5px;
+    border-radius: 7px;
+    background-color:#0046FF;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width:690px)
+{
+    .grid{
+        border:3px solid black;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    #resume_projects{
+        padding: 5px;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+}
